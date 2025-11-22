@@ -1,4 +1,16 @@
 .section{
   position: relative;
   width: 5%;
+  align-items: left;
+  justify-content: left;
+  overflow: hidden;
+}
+
+.section h1{
+  text-align: left;
+  font-size: 6 rem;
+  z-index: top;
+  background: #fff; 
+  padding: 20px:
+  margin: 15 px;
 }

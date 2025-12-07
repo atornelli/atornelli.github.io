@@ -7,36 +7,22 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-
-  
 <body>
 
-  <<div class="video-container">
-  <video autoplay loop muted playsinline preload="auto">
-    <source src="bike.mp4" type="video/mp4">
-  </video>
+  <div class="video-container">
+    <video id="myVideo" autoplay loop muted playsinline preload="auto">
+      <source src="bike.mp4" type="video/mp4">
+    </video>
 
-    <script>
-let vid = document.getElementById("myVideo");
-
-function getPlaySpeed() { 
-  alert(vid.playbackRate);
-} 
-
-function setPlaySpeed() { 
-  vid.playbackRate = 0.5;
-} 
-</script> 
-    
-  <div class="overlay">
-    <h1>Ale</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="overlay">
+      <h1>Ale</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </div>
-</div>
 
   <section id="about">
     <h2>About Me</h2>
@@ -55,6 +41,19 @@ function setPlaySpeed() {
     <p>Email: <a href="mailto:a_tornelli@coloradocollege.edu">a_tornelli@coloradocollege.edu</a></p>
   </section>
 
+  <script>
+    let vid = document.getElementById("myVideo");
+
+    function getPlaySpeed() { 
+      alert(vid.playbackRate);
+    } 
+
+    function setPlaySpeed() { 
+      vid.playbackRate = 0.5;
+    } 
+  </script>
+
 </body>
 </html>
+
 

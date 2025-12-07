@@ -45,3 +45,11 @@ section {
   background: black;
   color: white;
 }
+
+.highlight {
+  background: yellow;
+  color: black;
+  padding: 4px 8px;
+  border-radius: 4px; /* optional, makes it softer */
+}
+

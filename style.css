@@ -1,24 +1,40 @@
-.section{
-  position: relative;
-  width: 5%;
-  align-items: left;
-  justify-content: left;
+/* GENERAL LAYOUT */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* VIDEO SECTION BACKGROUND */
+.video-container {
+  position: relative;   /* allows overlaying text */
+  width: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 
-.section h1{
-  text-align: left;
-  font-size: 6 rem;
-  z-index: 1;
-  background: #fff; 
-  padding: 20px:
-  margin: 15 px;
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* makes video fill the screen */
 }
 
-.video-container{
+/* TEXT ON TOP OF VIDEO */
+.overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: 20%;   /* move up/down */
+  left: 5%;   /* move left/right */
+  z-index: 2;
 }
-  
+
+.overlay h1 {
+  font-size: 6rem;
+  margin: 15px;
+}
+
+/* SECTIONS BELOW VIDEO */
+section {
+  padding: 40px;
+  background: black;
+}

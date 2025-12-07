@@ -17,10 +17,9 @@
     <div class="overlay">
       <h1>Ale</h1>
       <nav>
-  <a class="highlight" href="about.html">About Me</a>
-  <a class="highlight" href="projects.html">Bio-Data Sonification</a>
-    </nav>
-
+        <a class="highlight" href="about.html">About Me</a>
+        <a class="highlight" href="projects.html">Bio-Data Sonification</a>
+      </nav>
     </div>
   </div>
 
@@ -29,16 +28,13 @@
     <p>Email: <a href="mailto:a_tornelli@coloradocollege.edu">a_tornelli@coloradocollege.edu</a></p>
   </section>
 
+  <!-- FIXED SCRIPT -->
   <script>
     let vid = document.getElementById("myVideo");
 
-    function getPlaySpeed() { 
-      alert(vid.playbackRate);
-    } 
-
-    function setPlaySpeed() { 
-      vid.playbackRate = 0.5;
-    } 
+    window.onload = function() {
+      vid.playbackRate = 0.5;   // slow motion
+    };
   </script>
 
 </body>

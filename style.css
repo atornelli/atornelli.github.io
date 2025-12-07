@@ -1,26 +1,47 @@
 .video-container {
   position: relative;
   width: 100%;
-  height: 100vh;     /* prevents flashing */
+  height: 100vh;
   overflow: hidden;
-  background: black; /* prevents white flash */
+  background: black;
 }
 
 .video-container video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* makes it behave like a background image */
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
 }
 
-/* TEXT OVER VIDEO */
 .overlay {
   position: absolute;
   top: 20%;
   left: 5%;
-  z-index: 2;        /* sits on top of the video */
+  color: white;
+  z-index: 2;
+}
+
+.overlay h1 {
+  font-size: 6rem;
+  margin: 0 0 20px 0;
+}
+
+nav a {
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 40px;
+  background: black;
   color: white;
 }

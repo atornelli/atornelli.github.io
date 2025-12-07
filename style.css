@@ -10,7 +10,7 @@ body, html {
 .video-container {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100hv;
   overflow: hidden;
   background: white; /* prevents flash before video loads */
 }

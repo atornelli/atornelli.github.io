@@ -53,3 +53,9 @@ section {
   border-radius: 4px; /* optional, makes it softer */
 }
 
+.contact {
+  background: yellow;
+  color: black;
+  padding: 4px 8px;
+  border-radius: 4px; /* optional, makes it softer */
+}

@@ -48,10 +48,12 @@ section {
 }
 
 .highlight {
-  background: yellow;
-  color: black;
-  padding: 4px 8px;
-  border-radius: 4px; /* optional, makes it softer */
+  background-color: yellow;   /* highlight color */
+  color: black;               /* text color */
+  padding: 4px 8px;           /* some space around text */
+  border-radius: 4px;         /* optional rounded corners */
+  display: inline-block;      /* fits width of text */
+  text-decoration: none;      /* remove underline for links */
 }
 
 .contact {

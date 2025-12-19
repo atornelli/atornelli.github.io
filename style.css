@@ -67,6 +67,8 @@ section {
 
 .about{
   color: black;
+  text-align: center;
+  margin: 25px 50px 75px;
 }
 
 .sonification{

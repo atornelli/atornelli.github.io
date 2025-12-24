@@ -142,21 +142,16 @@ section {
   opacity: 1;
 }
 
-.ert-text{
-  color: black;
-  text-align: left;
-  margin: 100px 300px 100px 300px;
+.ert-text,
+.ert-video {
+  max-width: 850px;   /* change this to whatever width you want */
+  margin: 0 auto;     /* center both text and video */
+  padding: 0 10px;    /* optional small side padding */
 }
 
-
+/* make the video responsive */
 .ert-video video {
   width: 100%;
   height: auto;
   display: block;
-}
-
-.ert-text,
-.ert-video {
-  max-width: 900px;   /* same width */
-  margin: 100px auto; /* center on page */
 }

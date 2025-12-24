@@ -97,14 +97,14 @@ section {
 /* Floating hover box */
 .about-hover {
   position: absolute;
-  top: 50%;            /* ⬅ adjust vertical position */
-  right: 80%;           /* ⬅ adjust horizontal position */
+  top: 50%;
+  left: 65%;                 /* 👈 adjust this */
   transform: translateY(-50%);
 
   width: 320px;
-  height: auto;
+  height: 320px;
 
-  z-index: 5;          /* floats above video */
+  z-index: 5;
   cursor: pointer;
 }
 

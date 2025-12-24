@@ -98,7 +98,7 @@ section {
 .about-hover {
   position: absolute;
   top: 50%;
-  left: 65%;                 /* 👈 adjust this */
+  left: 65%;              
   transform: translateY(-50%);
 
   width: 320px;

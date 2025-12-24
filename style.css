@@ -1,26 +1,32 @@
-/* GENERAL LAYOUT */
-body, html {
+/* =========================
+   GENERAL LAYOUT
+   ========================= */
+html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  color: white;
+  color: white;       /* global text color = white */
+  background: black;  /* global background = black */
 }
 
+/* =========================
+   HERO VIDEO
+   ========================= */
 .video-container {
   position: relative;
-  width: 100%;        /* full width */
-  height: 100vh;      /* full viewport height */
+  width: 100%;
+  height: 100vh;
   overflow: hidden;
-  background: black;  /* prevents flash before video loads */
+  background: black;
 }
 
 .video-container video {
-  width: 100%;        /* fill container width */
-  height: 100%;       /* fill container height */
-  object-fit: cover;  /* scales video correctly */
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   z-index: 0;
 }
 
@@ -28,87 +34,73 @@ body, html {
   position: absolute;
   top: 20%;
   left: 5%;
-  z-index: 2;          /* ensures text is above video */
+  z-index: 2;
 }
 
 .overlay h1 {
-  font-size: 3rem;     /* smaller and readable */
-  margin: 0 0 20px 0;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
-/* HIGHLIGHTED TEXT */
+/* =========================
+   HIGHLIGHTED TEXT
+   ========================= */
 .highlight {
-  background-color: yellow;   /* highlight color */
-  color: black;               /* text color */
-  padding: 4px 8px;           /* space around text */
-  border-radius: 4px;         /* optional rounded corners */
-  display: inline-block;      /* wraps only the text */
-  text-decoration: none;
+  background-color: yellow;
+  color: black;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
 }
 
-/* NAV LINKS */
+/* =========================
+   NAV LINKS
+   ========================= */
 nav a {
-  display: inline-block;      /* each link wraps text, not full width */
-  margin-bottom: 10px;        /* spacing between links */
+  display: inline-block;
+  margin-bottom: 10px;
   text-decoration: none;
+  color: white;
 }
 
-/* NAV HOVER */
 nav a:hover {
   text-decoration: underline;
 }
 
-/* SECTIONS BELOW VIDEO */
+/* =========================
+   DEFAULT SECTIONS (DARK)
+   ========================= */
 section {
   padding: 40px;
   background: black;
   color: white;
 }
 
-.about{
+/* =========================
+   ABOUT / SONIFICATION
+   ========================= */
+.about,
+.sonification {
   color: black;
   text-align: center;
   margin: 25px 50px 75px;
-  padding: 25px 50px 75px 100px;
+  padding: 25px;
 }
 
-.sonification{
-  color: black;
-  text-align: center;
-  margin: 25px 50px 75px;
-  padding: 25px 25px 25px 25px;
-}
-
-.biodataimg{
-  width: 400px; /* fixed width */
-  height: auto;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.video-container {
-  position: relative;  /* anchor for floating elements */
-}
-
-/* Floating hover box */
+/* =========================
+   FLOATING HOVER BOX
+   ========================= */
 .about-hover {
   position: absolute;
   top: 50%;
-  left: 65%;              
+  left: 65%;
   transform: translateY(-50%);
-
   width: 320px;
   height: auto;
-
   z-index: 5;
   cursor: pointer;
 }
 
-/* Image */
 .about-image {
   width: 100%;
   height: 100%;
@@ -116,24 +108,20 @@ section {
   transition: opacity 0.4s ease;
 }
 
-/* Text */
 .about-text {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.85);
   color: white;
   padding: 20px;
-
   display: flex;
   align-items: center;
   justify-content: center;
   line-height: 1.4;
-
   opacity: 0;
   transition: opacity 0.4s ease;
 }
 
-/* Hover swap */
 .about-hover:hover .about-image {
   opacity: 0;
 }
@@ -143,22 +131,38 @@ section {
 }
 
 /* =========================
-   ERT TEXT + VIDEO
+   IMAGES
    ========================= */
-
-.light-section {
-  background: black;
+.biodataimg {
+  width: 400px;
+  height: auto;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================
+   ERT SECTION (DARK)
+   ========================= */
+.light-section { 
+  background: black;  /* keep background black */
+  color: white;       /* ensure text is white */
+}
+
+/* ERT TEXT + VIDEO */
 .ert-text,
 .ert-video {
   max-width: 850px;
-  margin: 100px auto;
+  margin: 100px auto;  /* vertical spacing + horizontal centering */
   padding: 0 10px;
-  color: white;
+  color: white;        /* force white text */
   text-align: left;
 }
 
+/* Responsive video */
 .ert-video video {
   width: 100%;
   height: auto;

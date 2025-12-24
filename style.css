@@ -80,8 +80,14 @@ section {
 }
 
 .biodataimg{
-  width: 300px; /* fixed width */
+  width: 400px; /* fixed width */
   height: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .video-container {
@@ -95,7 +101,7 @@ section {
   right: 60%;           /* ⬅ adjust horizontal position */
   transform: translateY(-50%);
 
-  width: 260px;
+  width: 320px;
   height: auto;
 
   z-index: 5;          /* floats above video */

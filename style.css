@@ -79,3 +79,44 @@ section {
   padding: 25px 50px 75px 100px;
 }
 
+.about-hover {
+  position: relative;
+  width: 400px;       /* adjust */
+  height: 400px;      /* adjust */
+  cursor: pointer;
+}
+
+/* Image layer */
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease;
+}
+
+/* Text layer (hidden initially) */
+.about-text {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85); /* or white */
+  color: white;                  /* or black */
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Hover behavior */
+.about-hover:hover .about-image {
+  opacity: 0;
+}
+
+.about-hover:hover .about-text {
+  opacity: 1;
+}
+

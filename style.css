@@ -102,7 +102,7 @@ section {
   transform: translateY(-50%);
 
   width: 320px;
-  height: 320px;
+  height: auto;
 
   z-index: 5;
   cursor: pointer;

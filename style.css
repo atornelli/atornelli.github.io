@@ -142,3 +142,8 @@ section {
   opacity: 1;
 }
 
+.ert-text{
+  color: black;
+  text-align: center;
+  margin: 25px 50px 75px;
+}

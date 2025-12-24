@@ -79,9 +79,8 @@ section {
 /* =========================
    ABOUT / SONIFICATION
    ========================= */
-.about,
 .sonification {
-  color: black;
+  color: white;
   text-align: center;
   margin: 25px 50px 75px;
   padding: 25px;

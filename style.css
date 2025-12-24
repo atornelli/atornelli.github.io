@@ -147,6 +147,9 @@ section {
   max-width: 850px;   /* change this to whatever width you want */
   margin: 0 auto;     /* center both text and video */
   padding: 0 10px;    /* optional small side padding */
+  color: black;
+  text-align: left;
+  margin-top: 100px;
 }
 
 /* make the video responsive */
@@ -154,10 +157,4 @@ section {
   width: 100%;
   height: auto;
   display: block;
-}
-
-.ert-text {
-  color: black;
-  text-align: left;
-  margin-top: 100px;
 }

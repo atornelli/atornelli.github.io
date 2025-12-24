@@ -79,6 +79,11 @@ section {
   padding: 25px 50px 75px 100px;
 }
 
+.biodataimg{
+  width: 300px; /* fixed width */
+  height: auto;
+}
+
 .video-container {
   position: relative;  /* anchor for floating elements */
 }

@@ -148,7 +148,14 @@ section {
   margin: 100px 300px 100px 300px;
 }
 
-.ert-video{
-  margin: 100px 300px 100px 300px;
+
+.ert-container {
+  width: 600px; 
+  height: 400px;
 }
-  
+
+.ert-container ert-video {
+  width: 100%;  /* Video takes the full width of the container */
+  height: 100%; /* Video takes the full height of the container */
+  object-fit: cover; /* Stretches the video to fill the dimensions exactly, may distort aspect ratio */
+}

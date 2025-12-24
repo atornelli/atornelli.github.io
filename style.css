@@ -5,8 +5,8 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  color: white;       /* global text color = white */
-  background: black;  /* global background = black */
+  color: white;       
+  background: black; 
 }
 
 /* =========================
@@ -148,21 +148,19 @@ section {
    ERT SECTION (DARK)
    ========================= */
 .light-section { 
-  background: black;  /* keep background black */
-  color: white;       /* ensure text is white */
+  background: black;  
+  color: white;      
 }
 
-/* ERT TEXT + VIDEO */
 .ert-text,
 .ert-video {
   max-width: 850px;
-  margin: 100px auto;  /* vertical spacing + horizontal centering */
+  margin: 50px auto;  
   padding: 0 10px;
-  color: white;        /* force white text */
+  color: white;        
   text-align: left;
 }
 
-/* Responsive video */
 .ert-video video {
   width: 100%;
   height: auto;

@@ -171,6 +171,9 @@ section {
    ABOUT
    ========================= */
 .about-text{
+  max-width: 850px;
+  margin: 50px auto;  
+  padding: 0 10px;
   color: white;        
   text-align: center;
 }

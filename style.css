@@ -167,3 +167,10 @@ section {
   height: auto;
   display: block;
 }
+/* =========================
+   ABOUT
+   ========================= */
+.about-text{
+  color: white;        
+  text-align: center;
+}

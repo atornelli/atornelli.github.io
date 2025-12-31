@@ -9,28 +9,30 @@
 
 <body>
 
-   <div class="video-container">
-  <video id="myVideo" autoplay loop muted playsinline preload="auto">
-    <source src="bike.mp4" type="video/mp4">
-  </video>
+  <div class="video-container">
+    <video id="myVideo" autoplay loop muted playsinline preload="auto">
+      <source src="bike.mp4" type="video/mp4">
+    </video>
 
-  <div class="overlay" href="about.html">
-    <h2 class="highlight">  
-      <a class="highlight" href="about.html">About</a>
-    </h2><br>
-    <h2 class="highlight">  
-      Projects
-    </h2>
-    <p>
-      &emsp;&emsp; <a class="highlight" href="ert.html">Electrical Resistivity Tomography</a><br><br>
-      &emsp;&emsp; <a class="highlight" href="biodata.html">Bio-Data Sonification</a><br><br> 
-      &emsp;&emsp; <a class="highlight" href="angular.html">Quantized Angular Momentum</a><br><br>
-      &emsp;&emsp; <a class="highlight" href="Invisible Skin.html">The Physics of Invisible Skin</a><br><br>
-      &emsp;&emsp; <a class="highlight" href="Chemistry Art Conservation.html">Chemistry Art Conservation</a><br><br>
-      &emsp;&emsp; <a class="highlight" href="Cacti As Batteries.html">Cacti As Batteries</a><br><br>
-    </p>
+    <div class="overlay" href="about.html">
+      <h2 class="highlight">  
+        <a class="highlight" href="about.html">About</a>
+      </h2><br>
+      <h2 class="highlight">  
+        Projects
+      </h2>
+      <p>
+        &emsp;&emsp; <a class="highlight" href="ert.html">Electrical Resistivity Tomography</a><br><br>
+        &emsp;&emsp; <a class="highlight" href="biodata.html">Bio-Data Sonification</a><br><br> 
+        &emsp;&emsp; <a class="highlight" href="angular.html">Quantized Angular Momentum</a><br><br>
+        &emsp;&emsp; <a class="highlight" href="Invisible Skin.html">The Physics of Invisible Skin</a><br><br>
+        &emsp;&emsp; <a class="highlight" href="Chemistry Art Conservation.html">Chemistry Art Conservation</a><br><br>
+        &emsp;&emsp; <a class="highlight" href="Cacti As Batteries.html">Cacti As Batteries</a><br><br>
+      </p>
+    </div>
   </div>
 
+  <!-- Contact section moved outside video container -->
   <section id="contact">
     <h2>Contact</h2>
     <p>
@@ -39,7 +41,7 @@
       </a>
     </p>
   </section>
-        
+
   <script>
     let vid = document.getElementById("myVideo");
     window.onload = function() {
@@ -48,6 +50,7 @@
   </script>
 
 </body>
+
 </html>
 
 

@@ -192,15 +192,3 @@ section {
   color: #ccc;
   max-width: 100%;
 }
-
-/* Mobile fallback */
-@media (max-width: 768px) {
-  .about-layout {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .about-media {
-    margin: 0 auto;
-  }
-}

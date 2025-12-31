@@ -165,30 +165,3 @@ section {
   height: auto;
   display: block;
 }
-
-/* =========================
-   ABOUT
-   ========================= */
-.about-layout {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;
-  max-width: 1100px;
-  margin: 50px auto;
-  padding: 0 20px;
-}
-
-/* Image + subtitle column */
-.about-media {
-  width: fit-content;
-  text-align: center;
-}
-
-/* Subtitle under image */
-.about-subtitle {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  line-height: 1.4;
-  color: #ccc;
-  max-width: 100%;
-}

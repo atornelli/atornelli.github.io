@@ -170,10 +170,17 @@ section {
 /* =========================
    ABOUT
    ========================= */
-.about-text{
+
+.about-text,
+.about-img {
   max-width: 850px;
   margin: 50px auto;  
   padding: 0 10px;
   color: white;        
-  text-align: center;
+  text-align: left;
 }
+
+.ert-img img {
+  width: 100%;
+  height: auto;
+  display: block;

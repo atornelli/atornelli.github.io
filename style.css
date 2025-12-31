@@ -59,12 +59,12 @@ html, body {
 nav a {
   display: inline-block;
   margin-bottom: 10px;
-  text-decoration: none;
+  text-decoration: underline;
   color: white;
 }
 a {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* =========================

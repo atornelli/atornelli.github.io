@@ -79,70 +79,33 @@ section {
 /* =========================
    SONIFICATION
    ========================= */
-.sonification {
-  color: white;
-  text-align: center;
-  margin: 25px 50px 75px;
-  padding: 25px;
-}
-
-/* =========================
-   HOVER BOX
-   ========================= */
-.about-hover {
-  position: absolute;
-  top: 50%;
-  left: 65%;
-  transform: translateY(-50%);
-  width: 320px;
-  height: auto;
-  z-index: 5;
-  cursor: pointer;
-}
-
-.about-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: opacity 0.4s ease;
-}
-
-.about-text {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.85);
-  color: white;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1.4;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-.about-hover:hover .about-image {
-  opacity: 0;
-}
-
-.about-hover:hover .about-text {
-  opacity: 1;
-}
-
-/* =========================
-   IMAGES
-   ========================= */
-.biodataimg {
-  width: 400px;
-  height: auto;
-}
-
-.center-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.biodata-section {
   max-width: 850px;
+  margin: 50px auto;
+  padding: 0 10px;
+  color: white;
+}
+
+.biodata-description {
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.biodata-section img,
+.biodata-section video {
+  width: 100%;
   height: auto;
+  display: block;
+  margin: 20px 0 10px 0; 
+}
+
+.biodata-caption {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+  color: #ccc;
 }
 
 /* =========================
@@ -156,23 +119,20 @@ section {
   color: white;
 }
 
-/* Text description aligned left */
 .ert-description {
   text-align: left;
   line-height: 1.5;
   margin-bottom: 30px;
 }
 
-/* Media: images and videos scale to container width */
 .ert-section img,
 .ert-section video {
   width: 100%;
   height: auto;
   display: block;
-  margin: 20px 0 10px 0; /* bottom margin for spacing before caption */
+  margin: 20px 0 10px 0;
 }
 
-/* Subtitles/captions centered under media */
 .ert-caption {
   text-align: center;
   font-style: italic;
@@ -192,23 +152,22 @@ section {
   color: white;
 }
 
-/* Text description aligned left */
 .about-description {
   text-align: left;
   line-height: 1.5;
   margin-bottom: 30px;
 }
 
-/* Media: images and videos scale to container width */
+
 .about-section img,
 .about-section video {
   width: 100%;
   height: auto;
   display: block;
-  margin: 20px 0 10px 0; /* bottom margin for spacing before caption */
+  margin: 20px 0 10px 0;
 }
 
-/* Subtitles/captions centered under media */
+
 .about-caption {
   text-align: center;
   font-style: italic;

@@ -148,25 +148,41 @@ section {
 /* =========================
    ERT
    ========================= */
-.light-section { 
-  background: black;  
-  color: white;      
-}
-
-.ert-text,
-.ert-video {
+/* =========================
+   ERT SECTION (like Art)
+   ========================= */
+.ert-section {
   max-width: 850px;
-  margin: 50px auto;  
+  margin: 50px auto;
   padding: 0 10px;
-  color: white;        
-  text-align: left;
+  color: white;
 }
 
-.ert-video video {
+/* Text description aligned left */
+.ert-description {
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Media: images and videos scale to container width */
+.ert-section img,
+.ert-section video {
   width: 100%;
   height: auto;
   display: block;
+  margin: 20px 0 10px 0; /* bottom margin for spacing before caption */
 }
+
+/* Subtitles/captions centered under media */
+.ert-caption {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
 /* =========================
    ABOUT
    ========================= */

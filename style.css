@@ -10,7 +10,7 @@ html, body {
 }
 
 /* =========================
-   HERO VIDEO
+   VIDEO
    ========================= */
 .video-container {
   position: relative;
@@ -62,7 +62,10 @@ nav a {
   text-decoration: none;
   color: white;
 }
-
+a {
+  color: white;
+  text-decoration: none;
+}
 
 /* =========================
    DEFAULT SECTIONS (DARK)
@@ -84,7 +87,7 @@ section {
 }
 
 /* =========================
-   FLOATING HOVER BOX
+   HOVER BOX
    ========================= */
 .about-hover {
   position: absolute;
@@ -141,7 +144,7 @@ section {
 }
 
 /* =========================
-   ERT SECTION (DARK)
+   ERT
    ========================= */
 .light-section { 
   background: black;  
